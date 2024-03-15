@@ -1,1 +1,94 @@
 /* CSS 작성 */
+#wrap {
+  width: 1020px;
+  height: auto;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+
+/* header */
+header {
+  margin-bottom: 48px;
+}
+
+/* section */
+section {
+  height: 1020px;
+}
+
+/* section header */
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  color: var(--gray-600);
+  font: var(--title-medium-16);
+}
+
+.section-title {
+  font: var(--title-medium-24);
+  color: var(--black);
+}
+
+/* sectin items */
+ul {
+  height: 962px;
+}
+
+.item {
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--gray-500);
+  position: relative;
+}
+
+.item-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 42px;
+  height: 42px;
+  font-size: 12px;
+  background-color: var(--gray-500);
+  color: var(--white);
+  transition: background-color 0.4s;
+  display: flex;
+  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item:focus .item-btn::before,
+.item:hover .item-btn::before {
+  content: "구매하기";
+}
+
+.item:focus,
+.item:hover {
+  outline: none;
+  border: 1px solid var(--blue-600);
+  transition: all 0.3s;
+}
+
+.item:hover .item-btn,
+.item:focus .item-btn {
+  background-color: var(--blue-600);
+  width: 112px;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.lg {
+  width: 502px;
+  height: 310px;
+  padding: 20px 28px;
+}
+
+.sm {
+  width: 243px;
+  height: 310px;
+  padding: 14px 22px 14px 21px;
+}

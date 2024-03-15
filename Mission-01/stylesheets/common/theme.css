@@ -1,1 +1,25 @@
 /* Theme 스타일 작성 */
+:root {
+  /* color */
+  --black: #181818;
+  --white: #ffffff;
+  --gray-500: #c4c4c4;
+  --gray-600: #aaa9a9;
+  --blue-600: #0074e9;
+
+  /* weight */
+  --bold: 700;
+  --medium: 500;
+
+  /* line-height */
+  --line--height-115: 1.15;
+  --line--height-120: 1.2;
+
+  /* font */
+  --title-medium-16: var(--medium) 16px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --title-medium-24: var(--medium) 24px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --text-medium-14: var(--medium) 14px / var(--line--height-120) "Noto Sans KR",
+    sans-serif;
+}
