@@ -1,0 +1,153 @@
+:root {
+  /* opacity */
+  --opacity: 0.2;
+  /* color */
+  --black-0: #181818;
+  --black-1: #00000033;
+  --white: #ffffff;
+  /* gray */
+  --gray-100: #f3f3f3;
+  --gray-200: #e7e7e7;
+  --gray-300: #dbdbdb;
+  --gray-400: #cfcfcf;
+  --gray-500: #c4c4c4;
+  --gray-600: #aaa9a9;
+  --gray-700: #757575;
+  --gray-800: #4e4e4e;
+  --gray-900: #272727;
+  /* blue */
+  --blue-100: #cceaf9;
+  --blue-200: #65cde3;
+  --blue-300: #61bfe6;
+  --blue-400: #33abe9;
+  --blue-500: #0096e4;
+  --blue-600: #0074e9;
+  --blue-700: #005a88;
+  --blue-800: #003c5b;
+  --blue-900: #001e2d;
+  /* red */
+  --red-100: #f9d3d5;
+  --red-200: #f4a7ac;
+  --red-300: #ef7b82;
+  --red-400: #ea4f59;
+  --red-500: #e52330;
+  --red-600: #b71c26;
+  --red-700: #89151c;
+  --red-800: #5b0e13;
+  --red-900: #2d0709;
+  /* yellow */
+  --yellow-100: #fef1d9;
+  --yellow-200: #fde4b3;
+  --yellow-300: #fcd68e;
+  --yellow-400: #fbc968;
+  --yellow-500: #fbbc43;
+  --yellow-600: #ff9b05;
+  --yellow-700: #967028;
+  --yellow-800: #644b1a;
+  --yellow-900: #32250d;
+  /* green */
+  --green-100: #f3f5d1;
+  --green-200: #e8eba4;
+  --green-300: #dde177;
+  --green-400: #d2d74a;
+  --green-500: #c7cd1d;
+  --green-600: #9fa417;
+  --green-700: #777b11;
+  --green-800: #4f520b;
+  --green-900: #272905;
+  /* brown */
+  --brown-100: #ded5d3;
+  --brown-200: #beaba8;
+  --brown-300: #9d7a6d;
+  --brown-400: #7e5752;
+  --brown-500: #5e2e27;
+  --brown-600: #4b241f;
+  --brown-700: #381b17;
+  --brown-800: #25120f;
+  --brown-900: #120907;
+  /* purple */
+  --purple-100: #ded7f2;
+  --purple-200: #beb0e5;
+  --purple-300: #9d88d9;
+  --purple-400: #7d61cc;
+  --purple-500: #5d3ac0;
+  --purple-600: #4a2e99;
+  --purple-700: #372273;
+  --purple-800: #25174c;
+  --purple-900: #120b26;
+
+  /* font */
+  /* weight */
+  --bold: 700;
+  --medium: 500;
+  --regular: 400;
+
+  /* line-height */
+  --line--height-115: 1.15;
+  --line--height-120: 1.2;
+  --line--height-150: 1.5;
+
+  /* Title Bold */
+  --title-bold-16: var(--bold) 16px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --title-bold-18: var(--bold) 18px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --title-bold-24: var(--bold) 24px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --title-bold-28: var(--bold) 28px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --title-bold-32: var(--bold) 32px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  /* Title Medium */
+  --title-medium-16: var(--medium) 16px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --title-medium-18: var(--medium) 18px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --title-medium-24: var(--medium) 24px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --title-medium-28: var(--medium) 28px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  --title-medium-32: var(--medium) 32px / var(--line--height-115) "Noto Sans KR",
+    sans-serif;
+  /* Text Regular */
+  --text-regular-12: var(--regular) 12px / var(--line--height-150)
+      "Noto Sans KR",
+    sans-serif;
+  --text-regular-13: var(--regular) 13px / var(--line--height-150)
+      "Noto Sans KR",
+    sans-serif;
+  --text-regular-14: var(--regular) 14px / var(--line--height-150)
+      "Noto Sans KR",
+    sans-serif;
+  --text-regular-16: var(--regular) 16px / var(--line--height-150)
+      "Noto Sans KR",
+    sans-serif;
+  --text-regular-18: var(--regular) 18px / var(--line--height-150)
+      "Noto Sans KR",
+    sans-serif;
+  --text-regular-20: var(--regular) 20px / var(--line--height-150)
+      "Noto Sans KR",
+    sans-serif;
+  /* Text Medium */
+  --text-medium-12: var(--medium) 12px / var(--line--height-120) "Noto Sans KR",
+    sans-serif;
+  --text-medium-14: var(--medium) 14px / var(--line--height-120) "Noto Sans KR",
+    sans-serif;
+  --text-medium-16: var(--medium) 16px / var(--line--height-120) "Noto Sans KR",
+    sans-serif;
+  --text-medium-18: var(--medium) 18px / var(--line--height-120) "Noto Sans KR",
+    sans-serif;
+  --text-medium-20: var(--medium) 20px / var(--line--height-120) "Noto Sans KR",
+    sans-serif;
+  /* Text Bold */
+  --text-bold-12: var(--bold) 12px / var(--line--height-150) "Noto Sans KR",
+    sans-serif;
+  --text-bold-14: var(--bold) 14px / var(--line--height-150) "Noto Sans KR",
+    sans-serif;
+  --text-bold-16: var(--bold) 16px / var(--line--height-150) "Noto Sans KR",
+    sans-serif;
+  --text-bold-18: var(--bold) 18px / var(--line--height-150) "Noto Sans KR",
+    sans-serif;
+  --text-bold-20: var(--bold) 20px / var(--line--height-150) "Noto Sans KR",
+    sans-serif;
+}
