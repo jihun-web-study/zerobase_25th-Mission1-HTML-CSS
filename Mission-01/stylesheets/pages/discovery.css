@@ -1,4 +1,5 @@
 /* CSS 작성 */
+/* BEM 방법론으로 이름 짓기 */
 #wrap {
   width: 1020px;
   height: auto;
@@ -7,17 +8,17 @@
 }
 
 /* header */
-header {
+.wrap--header {
   margin-bottom: 48px;
 }
 
 /* section */
-section {
-  height: 1020px;
+.section {
+  height: auto;
 }
 
 /* section header */
-.section-header {
+.section--header {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
@@ -25,17 +26,26 @@ section {
   font: var(--title-medium-16);
 }
 
-.section-title {
+.section--header--title {
   font: var(--title-medium-24);
   color: var(--black);
 }
 
 /* sectin items */
-ul {
-  height: 962px;
+.section--container {
+  height: auto;
+}
+
+.section--container::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .item {
+  width: 243px;
+  height: 310px;
+  padding: 14px 22px 14px 21px;
   float: left;
   margin-right: 16px;
   margin-bottom: 16px;
@@ -43,7 +53,24 @@ ul {
   position: relative;
 }
 
-.item-btn {
+.item-large {
+  width: 502px;
+  height: 310px;
+  padding: 20px 28px;
+}
+
+.item-margin-right-0 {
+  margin-right: 0;
+}
+
+.item:focus,
+.item:hover {
+  outline: none;
+  border: 1px solid var(--blue-600);
+  transition: border 0.3s linear;
+}
+
+.item--btn {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -52,43 +79,19 @@ ul {
   font-size: 12px;
   background-color: var(--gray-500);
   color: var(--white);
-  transition: background-color 0.4s;
+  transition: backgroud-color, width 0.3s;
   display: flex;
-  justify-content: center;
   justify-content: flex-end;
   align-items: center;
 }
 
-.item:focus .item-btn::before,
-.item:hover .item-btn::before {
-  content: "구매하기";
+.item:focus .item--btn::before,
+.item:hover .item--btn::before {
+  content: '구매하기';
 }
 
-.item:focus,
-.item:hover {
-  outline: none;
-  border: 1px solid var(--blue-600);
-  transition: all 0.3s;
-}
-
-.item:hover .item-btn,
-.item:focus .item-btn {
+.item:hover .item--btn,
+.item:focus .item--btn {
   background-color: var(--blue-600);
   width: 112px;
-}
-
-.mr-0 {
-  margin-right: 0;
-}
-
-.lg {
-  width: 502px;
-  height: 310px;
-  padding: 20px 28px;
-}
-
-.sm {
-  width: 243px;
-  height: 310px;
-  padding: 14px 22px 14px 21px;
 }
