@@ -34,6 +34,9 @@ body {
 }
 
 .section--header--icon {
+  width: 30px;
+  height: 30px;
+  background-image: url('../../assets/icon/shopping.svg');
 }
 
 .section--header--title {
