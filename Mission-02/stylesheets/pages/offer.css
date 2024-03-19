@@ -1,1 +1,160 @@
 /* 오늘의 쇼핑 제안 */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#wrap {
+  width: 1022px;
+  margin: 0 auto;
+}
+
+.main--logo {
+  height: 40px;
+}
+
+.main--logo img {
+  height: 40px;
+}
+
+.section {
+  height: auto;
+}
+
+.section--header {
+  height: 30px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.section--header--icon {
+}
+
+.section--header--title {
+  font: 500 24px / 1.15 var(--font-family);
+}
+
+.section--container {
+  height: auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container--item {
+  display: inline-block;
+  width: 200px;
+  height: 270px;
+  position: relative;
+}
+
+.item--discount--rate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 4px;
+  padding: 3px 10px;
+  color: var(--color-white);
+  background-color: var(--color-red-500);
+  font: 600 16px / 1.5 var(--font-family);
+}
+
+.item--image {
+  padding: 0 20px;
+  padding-top: 14px;
+  margin-bottom: 12px;
+}
+
+.item--description {
+  padding: 0 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item--description--name {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 12px;
+  font: 400 14px / 1.2 var(--font-family);
+}
+
+.item--description--delivery--rocket {
+  width: 55px;
+  height: 16px;
+}
+
+.item--description--delivery--free {
+  font-size: 14px;
+  color: var(--color-gray-700);
+}
+
+.item--description--review {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.item--description--review--rate {
+  width: 68px;
+  height: 12px;
+  background-image: url('../../assets/sprites/rating-stars.png');
+}
+
+/* 높이 12px * 11개 + 하단마진 2px * 10개 = 152px */
+.item--description--review--rate.rate--00 {
+  background-position-y: 0px;
+}
+
+.item--description--review--rate.rate--05 {
+  background-position-y: calc(-14px * 1);
+}
+
+.item--description--review--rate.rate--10 {
+  background-position-y: calc(-14px * 2);
+}
+
+.item--description--review--rate.rate--15 {
+  background-position-y: calc(-14px * 3);
+}
+
+.item--description--review--rate.rate--20 {
+  background-position-y: calc(-14px * 4);
+}
+
+.item--description--review--rate.rate--25 {
+  background-position-y: calc(-14px * 5);
+}
+
+.item--description--review--rate.rate--30 {
+  background-position-y: calc(-14px * 6);
+}
+
+.item--description--review--rate.rate--35 {
+  background-position-y: calc(-14px * 7);
+}
+
+.item--description--review--rate.rate--40 {
+  background-position-y: calc(-14px * 8);
+}
+
+.item--description--review--rate.rate--45 {
+  background-position-y: calc(-14px * 9);
+}
+
+.item--description--review--rate.rate--50 {
+  background-position-y: calc(-14px * 10);
+}
+
+.item--description--review--count {
+  margin-left: 4px;
+  font: 400 14px / 1.2 var(--font-family);
+  color: var(--color-gray-700);
+}
