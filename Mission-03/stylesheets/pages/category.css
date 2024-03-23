@@ -1,10 +1,4 @@
 /* 카테고리별 추천 광고상품 */
-
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
 #wrap {
   width: 1022px;
   height: auto;
@@ -12,34 +6,263 @@ body {
   padding-top: 100px;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
+.logo {
+  margin-bottom: 48px;
 }
 
-section {
+/* section 영역 */
+.section--header {
+  margin-bottom: 24px;
+}
+
+.category {
   width: 100%;
   height: 634px;
   display: flex;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 2px solid;
+  border-bottom: 1px solid;
 }
 
-section:nth-of-type(2) {
+.category:nth-of-type(n + 2) {
   margin-top: 24px;
 }
 
-.left {
+/* 카테고리 좌측 */
+.category--left {
   width: 174px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 24px;
+  padding-top: 48px;
 }
 
-.center {
+.category--left--top {
+  /* margin-top: 48px; */
+}
+
+.left--top--header {
+  margin-bottom: 8px;
+}
+
+.left--top--shortcut {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-gray-700);
+}
+
+.left--top--shortcut > img {
+  padding-top: 2px;
+}
+
+.category--left--bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.hot-keyword {
+  margin-bottom: 20px;
+  font: var(--title-medium-18);
+}
+
+.hashtag {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid var(--color-gray-400);
+  font: var(--text-regular-12);
+}
+
+.hashtag:nth-child(n + 2) {
+  margin-top: 12px;
+}
+
+.hashtag > a::before {
+  content: '#';
+}
+
+/* 카테고리 중앙 */
+.category--center {
+  position: relative;
   width: 320px;
   height: 100%;
 }
 
-.right {
+.center--slide--banner {
+  position: absolute;
+  left: 30px;
+  bottom: 58px;
+  width: 260px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-white);
+}
+
+.banner-large {
+  font: var(--text-bold-18);
+}
+
+.banner-small {
+  font: var(--text-regular-14);
+}
+
+.center--slide--indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-gray-600);
+}
+
+.indicator.active {
+  background-color: var(--color-gray-700);
+}
+
+/* 카테고리 우측 */
+.category--right {
   width: 528px;
   height: 100%;
+}
+
+.category--right--top {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category--right--top::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-gray-600);
+}
+
+.category--right--bottom {
+  width: 100%;
+  height: 50%;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item--box {
+  display: inline-block;
+  width: 160px;
+  height: 100%;
+}
+
+.item--box--img {
+  margin-bottom: 12px;
+}
+
+.item--box--name {
+  margin-bottom: 12px;
+  font: var(--text-regular-14);
+}
+
+.item--box--discount {
+  margin-bottom: 4px;
+  font: var(--text-regular-14);
+  color: var(--color-red-500);
+}
+
+.item--box--price {
+  font: var(--text-regular-14);
+}
+
+.item--box--price > strong {
+  font: var(--text-bold-18);
+}
+
+.item--box--price > strong::after {
+  content: ' ';
+}
+
+.rocket {
+  margin-left: 6px;
+}
+
+/* 색상 class */
+.color-blue {
+  color: var(--color-blue-600);
+}
+
+.color-brown {
+  color: var(--color-brown-300);
+}
+
+.color-green {
+  color: var(--color-green-700);
+}
+
+.background-brown {
+  background-color: var(--color-brown-300);
+}
+
+.background-green {
+  background-color: var(--color-green-700);
+}
+
+.border-brown {
+  border-color: var(--color-brown-300);
+}
+
+.border-green {
+  border-color: var(--color-green-700);
+}
+
+/* 폰트 class */
+
+.font-title-medium-16 {
+  font: var(--title-medium-16);
+}
+
+.font-title-medium-18 {
+  font: var(--title-medium-18);
+}
+
+.font-title-medium-24 {
+  font: var(--title-medium-24);
+}
+
+.font-title-bold-24 {
+  font: var(--title-bold-24);
+}
+
+.font-text-regular-12 {
+  font: var(--text-regular-12);
+}
+
+.font-text-regular-14 {
+  font: var(--text-regular-14);
+}
+
+.font-text-bold-14 {
+  font: var(--text-bold-14);
+}
+
+.font-text-bold-18 {
+  font: var(--text-bold-18);
 }
