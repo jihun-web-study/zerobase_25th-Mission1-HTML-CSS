@@ -60,7 +60,7 @@
   width: 6px;
   height: 10px;
   margin-left: 4px;
-  background-image: url('../../assets/icon/angle-right-default.svg');
+  background-image: url("../../assets/icon/angle-right-default.svg");
   background-repeat: no-repeat;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .hashtag > a::before {
-  content: '#';
+  content: "#";
 }
 
 /* 카테고리 중앙 */
@@ -102,6 +102,8 @@
   height: 100%;
   overflow: hidden;
   list-style: none;
+
+  z-index: 99;
 }
 
 .carousel--item {
@@ -173,7 +175,7 @@
 }
 
 .category--right--top::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -220,7 +222,7 @@
 }
 
 .item--box--price > strong::after {
-  content: ' ';
+  content: " ";
 }
 
 .rocket {
