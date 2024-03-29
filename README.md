@@ -4,8 +4,9 @@
 
 > 총 5개로 이루어져 있음
 
-- [ ] Mission 01 
-- [ ] Mission 02 
-- [ ] Mission 03 
-- [ ] Mission 04 
+- [x] Mission 01 
+- [x] Mission 02 
+- [x] Mission 03 
+- [x] Mission 04 
 - [ ] Mission 05
+
