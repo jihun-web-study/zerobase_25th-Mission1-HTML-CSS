@@ -1,4 +1,5 @@
-/* 헤더 */
+/* 추가적 reset css */
+h1,
 button {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ ul {
   list-style: none;
 }
 
-/*  */
+/* 헤더 */
 header {
   width: 100%;
   height: auto;
@@ -89,6 +90,7 @@ header {
 }
 
 .menubar--logo {
+  display: inline-block;
   width: 175px;
   height: 40px;
   padding-top: 30px;
@@ -181,42 +183,45 @@ header {
 }
 
 .myCoupang {
-  width: auto;
   position: relative;
+  width: auto;
+  height: 100%;
+  padding-bottom: 10px;
   font: var(--text-regular-12);
 }
 
 .myCoupang > button {
   height: 100%;
   padding: 0 22px;
-  padding-top: 30px;
+  padding-top: 36px;
   background-color: var(--color-white);
   background-image: url('../../assets/icon/my-coupang.svg');
   background-repeat: no-repeat;
   background-size: 30px;
-  background-position: center top 6px;
+  background-position: center top;
 }
 
 .myCoupang--hover {
   position: absolute;
   left: 0;
-  bottom: 0;
-  /* transform: translateX(); */
+  bottom: 0px;
   transform: translateY(100%);
   width: 90px;
   height: auto;
   display: none;
+  padding: 24px 0px;
+  padding-right: 0;
   border: 1px solid var(--color-gray-300);
   background-color: var(--color-white);
 }
 
-.myCoupang--hover > li {
+.myCoupang--hover > li > a {
+  width: 100%;
   padding-left: 20px;
-  margin-bottom: 20px;
 }
 
-.myCoupang--hover > li:first-of-type {
-  padding-top: 30px;
+.myCoupang--hover > li:nth-of-type(n + 2) {
+  margin-top: 20px;
 }
 
 .myCoupang--hover:before {
@@ -249,17 +254,18 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
+  padding-bottom: 10px;
   font: var(--text-regular-12);
 }
 
 .cart > button {
   height: 100%;
-  padding-top: 30px;
+  padding-top: 36px;
   background-color: var(--color-white);
   background-image: url('../../assets/icon/cart.svg');
   background-repeat: no-repeat;
   background-size: 30px;
-  background-position: center top 6px;
+  background-position: center top;
 }
 
 .cart > button::before {
@@ -279,7 +285,7 @@ header {
 .cart--hover {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
   transform: translateY(100%);
   width: 288px;
   height: 99px;
