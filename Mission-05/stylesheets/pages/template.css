@@ -74,6 +74,7 @@ ul {
 .depth--container {
   width: 180px;
   height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding: 10px 0;
@@ -81,7 +82,7 @@ ul {
   box-shadow: 0 4px 4px var(--color-opacity-20);
   background-color: var(--color-white);
   list-style: none;
-  /* display: none; */
+  display: none; /* 테스트할 땐 주석처리하기 */
 }
 
 .depth1 {
@@ -106,7 +107,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 8px 5px;
+  padding: 5px 5px;
   padding-left: 25px;
   font: var(--text-regular-12);
   color: var(--color-black);
