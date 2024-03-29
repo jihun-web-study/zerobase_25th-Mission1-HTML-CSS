@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>오늘의 쇼핑 제안 - 쿠팡(Coupang)</title>
-    <link rel="icon" href="/assets/favicon/favicon.png" />
+    <link rel="icon" href="./assets/favicon/favicon.png" />
     <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./assets/favicon/favicon.png" type="image/png" sizes="32x32" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./stylesheets/main.css" />
   </head>
   <body>
@@ -28,59 +31,75 @@
 
       <section class="section">
         <h2 class="section--header">
-          <div class="section--header--icon"></div>
+          <span class="section--header--icon"></span>
           <span class="section--header--title">오늘의 쇼핑 제안</span>
         </h2>
 
         <ul class="section--container">
           <li>
-            <a class="container--item" href="/Mission-02/index.html">
-              <div class="item--discount--rate" aria-label="상품 할인율">30%</div>
+            <a class="container--item" href="/">
+              <div class="item--discount--rate">
+                <span class="sr-only">30% 할인 중</span>
+                30%
+              </div>
               <img class="item--image" src="./assets/offer/furniture.jpg" alt="솔로리빌 셀린 렌지대" />
               <div class="item--description">
                 <div class="item--description--name">솔로리빙 셀린 렌지대 60x140</div>
 
                 <div class="item--description--review">
-                  <div class="item--description--review--rate rate--45" aria-label="구매자 평점"></div>
-                  <span class="item--description--review--count" aria-label="상품 리뷰 수">(3,255)</span>
+                  <div class="item--description--review--rate rate--45">
+                    <span class="sr-only">구매자 평점 4.5점</span>
+                  </div>
+                  <span class="item--description--review--count">
+                    <span class="sr-only">3255개의 상품 리뷰</span>
+                    (3,255)
+                  </span>
                 </div>
               </div>
             </a>
           </li>
           <li class="container--item">
-            <a href="/Mission-02/index.html">
+            <a class="container--item" href="/">
               <img class="item--image" src="./assets/offer/renton.jpg" alt="옆 동네몰 레트로 LED 감성 랜턴" />
               <div class="item--description">
                 <div class="item--description--name">옆 동네몰 레트로 LED 감성 랜턴</div>
-                <img
-                  class="item--description--delivery--rocket"
-                  aria-label="상품 배송정보"
-                  src="./assets/icon/badge-rocket.svg"
-                  alt="로켓배송"
-                />
+
                 <div class="item--description--review">
-                  <div class="item--description--review--rate rate--45" aria-label="구매자 평점"></div>
-                  <span class="item--description--review--count" aria-label="상품 리뷰 수">(1,807)</span>
+                  <div class="item--description--review--rate rate--45">
+                    <span class="sr-only">구매자 평점 4.5점</span>
+                  </div>
+                  <span class="item--description--review--count">
+                    <span class="sr-only">1807개의 상품 리뷰</span>
+                    (1,807)
+                  </span>
                 </div>
               </div>
             </a>
           </li>
           <li>
-            <a class="container--item" href="/Mission-02/index.html">
+            <a class="container--item" href="/">
               <img class="item--image" src="./assets/offer/drying-rack.jpg" alt="프리미엄 부착식 식기건조대" />
               <div class="item--description">
                 <div class="item--description--name">프리미엄 부착식 식기건조대</div>
                 <div class="item--description--delivery--free" aria-label="상품 배송정보">무료배송</div>
                 <div class="item--description--review">
-                  <div class="item--description--review--rate rate--40" aria-label="구매자 평점"></div>
-                  <span class="item--description--review--count" aria-label="상품 리뷰 수">(2,423)</span>
+                  <div class="item--description--review--rate rate--40">
+                    <span class="sr-only">구매자 평점 4점</span>
+                  </div>
+                  <span class="item--description--review--count">
+                    <span class="sr-only">2423개의 상품 리뷰</span>
+                    (2,423)
+                  </span>
                 </div>
               </div>
             </a>
           </li>
           <li>
-            <a class="container--item" href="/Mission-02/index.html">
-              <div class="item--discount--rate" aria-label="상품 할인율">10%</div>
+            <a class="container--item" href="/">
+              <div class="item--discount--rate">
+                <span class="sr-only">10% 할인 중</span>
+                10%
+              </div>
               <img class="item--image" src="./assets/offer/boohgle.jpg" alt="보오글 네모 냄비" />
               <div class="item--description">
                 <div class="item--description--name">타지 않는 냄비 보오글 네모 냄비</div>
@@ -91,22 +110,35 @@
                   alt="로켓배송"
                 />
                 <div class="item--description--review">
-                  <div class="item--description--review--rate rate--50" aria-label="구매자 평점"></div>
-                  <span class="item--description--review--count" aria-label="상품 리뷰 수">(1,009)</span>
+                  <div class="item--description--review--rate rate--50">
+                    <span class="sr-only">구매자 평점 5점</span>
+                  </div>
+                  <span class="item--description--review--count">
+                    <span class="sr-only">1009개의 상품 리뷰</span>
+                    (1,009)
+                  </span>
                 </div>
               </div>
             </a>
           </li>
           <li>
-            <a class="container--item" href="/Mission-02/index.html">
-              <div class="item--discount--rate" aria-label="상품 할인율">25%</div>
+            <a class="container--item" href="/">
+              <div class="item--discount--rate">
+                <span class="sr-only">25% 할인 중</span>
+                25%
+              </div>
               <img class="item--image" src="./assets/offer/deskset.jpg" alt="베스트리빙 베이직 멀티 H 책상" />
               <div class="item--description">
                 <div class="item--description--name">베스트리빙 베이직 멀티 H 책상</div>
                 <div class="item--description--delivery--free" aria-label="상품 배송정보">무료배송</div>
                 <div class="item--description--review">
-                  <div class="item--description--review--rate rate--40" aria-label="구매자 평점"></div>
-                  <span class="item--description--review--count" aria-label="상품 리뷰 수">(3,203)</span>
+                  <div class="item--description--review--rate rate--40">
+                    <span class="sr-only">구매자 평점 4점</span>
+                  </div>
+                  <span class="item--description--review--count" aria-label="상품 리뷰 수">
+                    <span class="sr-only">3203개의 상품 리뷰</span>
+                    (3,203)
+                  </span>
                 </div>
               </div>
             </a>

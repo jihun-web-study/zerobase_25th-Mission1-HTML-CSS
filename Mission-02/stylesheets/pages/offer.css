@@ -1,22 +1,24 @@
 /* 오늘의 쇼핑 제안 */
+h1,
 ul {
   margin: 0;
   padding: 0;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 #wrap {
   width: 1022px;
   margin: 0 auto;
+  padding-top: 100px;
 }
 
 .main--logo {
   height: 40px;
-  margin-top: 100px;
+  margin-bottom: 48px;
 }
 
 .main--logo img {
