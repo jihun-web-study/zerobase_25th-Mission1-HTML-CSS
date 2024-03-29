@@ -15,6 +15,10 @@
   margin-bottom: 24px;
 }
 
+.section--header--subtitle {
+  display: block;
+}
+
 .category {
   width: 100%;
   height: 634px;
@@ -35,11 +39,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 28px 24px;
-  padding-top: 48px;
+  padding-top: 0px;
 }
 
 .category--left--top {
-  /* margin-top: 48px; */
+  margin-top: 48px;
 }
 
 .left--top--header {
@@ -47,14 +51,17 @@
 }
 
 .left--top--shortcut {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  display: inline-block;
   color: var(--color-gray-700);
 }
 
-.left--top--shortcut > img {
-  padding-top: 2px;
+.shortcut--direct {
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  margin-left: 4px;
+  background-image: url('../../assets/icon/angle-right-default.svg');
+  background-repeat: no-repeat;
 }
 
 .category--left--bottom {
@@ -85,9 +92,25 @@
 
 /* 카테고리 중앙 */
 .category--center {
-  position: relative;
   width: 320px;
   height: 100%;
+  position: relative;
+}
+
+.center--carousel {
+  width: 200%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+}
+
+.carousel--item {
+  display: none;
+  position: relative;
+}
+
+.carousel--item.is__selected {
+  display: inline-block;
 }
 
 .center--slide--banner {
@@ -115,7 +138,7 @@
 .center--slide--indicator {
   position: absolute;
   left: 50%;
-  bottom: 12px;
+  bottom: 22px;
   transform: translateX(-50%);
   width: 32px;
   height: 12px;
